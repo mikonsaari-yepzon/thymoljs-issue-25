@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<!-- Shared navigation fragment -->
+<head th:replace="header :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./thymol-current.js"
+            data-thymol-load="./thymol-dummy-data.js"></script>
+</head>
+<body>
+<nav th:replace="navigation :: navigation"></nav>
+<div class="container"></div>
+<div th:replace="footer :: scripts"></div>
+</body>
+</html>
